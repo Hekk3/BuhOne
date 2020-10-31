@@ -238,3 +238,16 @@ reviewsNext.addEventListener('click', function () {
 	reviewsMoveTrack();
 	reviewsCheckBtnforDots();
 });
+
+// burger 
+
+const burger = document.querySelector('.burger'),
+	  nav = document.querySelector('.top-panel__content');
+
+const navShow = function() {
+	nav.classList.toggle('top-panel__content--active');
+	burger.classList.toggle('burger--active');
+}
+
+
+burger.addEventListener('click', navShow);
